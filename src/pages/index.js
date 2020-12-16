@@ -27,7 +27,7 @@ const IndexPage = () => (
             <h2>About</h2>
           </header>
           <p>
-            I am a passionate software engineer, artist, and IT expert. I have traveled the world, and experience in a variety of fields. My specialization is microservices like API package, and library creation. 
+            I am a passionate software engineer, artist, and IT expert. I have traveled the world, and experience in a variety of fields. My specialization is microservices like APIs, packages, and library creation. 
           </p>
         </div>
         <Scroll type="id" element="two">
@@ -45,28 +45,35 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>Stuff I do</h2>
+            <h2>My Hobbies</h2>
           </header>
           <p>
-            Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum
-            lorem blandit vis ac commodo aliquet vulputate.
+            I love creating art, music, and code; Traveling the world.
           </p>
           <ul className="icons-grid">
             <li>
-              <span className="icon major fa-camera-retro" />
+              <span className="icon major fa fa-code" />
+              <h3>Programming</h3>
+            </li>
+            <li>
+              <span className="icon major fa fa-music" />
+              <h3>Music</h3>
+            </li>
+            <li>
+              <span className="icon major fa fa-camera-retro" />
               <h3>Photography</h3>
             </li>
             <li>
-              <span className="icon major fa-pencil" />
-              <h3>Blogging</h3>
+              <span className="icon major fa fa-globe" />
+              <h3>Traveling</h3>
             </li>
             <li>
-              <span className="icon major fa-code" />
-              <h3>Web Development</h3>
+              <span className="icon major fa fa-paint-brush" />
+              <h3>Art</h3>
             </li>
             <li>
-              <span className="icon major fa-coffee" />
-              <h3>Sipping Coffee</h3>
+              <span className="icon major fa fa-gamepad" />
+              <h3>Gaming</h3>
             </li>
           </ul>
         </div>
