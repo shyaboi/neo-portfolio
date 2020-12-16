@@ -14,7 +14,7 @@ export default function Header() {
           <li>
             <Scroll type="id" element="one">
               <a href="#one" className="button primary">
-                Begin
+                Entry, Please
               </a>
             </Scroll>
           </li>

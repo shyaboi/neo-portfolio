@@ -24,14 +24,10 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>Who I am</h2>
+            <h2>About</h2>
           </header>
           <p>
-            Aliquam ante ac id. Adipiscing interdum lorem praesent fusce
-            pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed
-            adipiscing eu amet interdum lorem blandit vis ac commodo aliquet
-            integer vulputate phasellus lorem ipsum dolor lorem magna consequat
-            sed etiam adipiscing interdum.
+            I am a passionate software engineer, artist, and IT expert. I have traveled the world, and experience in a variety of fields. My specialization is microservices like API package, and library creation. 
           </p>
         </div>
         <Scroll type="id" element="two">
