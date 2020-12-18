@@ -8,6 +8,8 @@ import Scroll from '../components/Scroll';
 import overLayPic from '../assets/images/overlay.png';
 import { Link } from 'gatsby';
 
+const everise = require('../assets/images/everise.jpg')
+
 const sections = [
   { id: 'one', bg: require('../assets/images/pic01.jpg') },
   { id: 'two', bg: require('../assets/images/pic02.jpg') },
@@ -25,7 +27,7 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>About</h2>
+            <h2></h2>
           </header>
           <p>
             I am a passionate software engineer, artist, and IT expert. I have traveled the world, and experience in a variety of fields. My specialization is microservices like APIs, packages, and library creation. 
@@ -56,9 +58,10 @@ const IndexPage = () => (
               <span className="icon major fa fa-code" />
               <h3>Open Flags API</h3>
             </li>
-            <li>
-              <span className="icon major fa fa-music" />
-              <h3>nPoP</h3>
+            <li id='everise'>
+            <p id='eP'>Maintain and create software tools for Everise IT and logistics</p>
+          {/* <img src={everise} alt="everise logo" className="" width='90' /> */}
+              {/* <span className="icon major fa fa-music" /> */}
             </li>
             <li>
               <span className="icon major fa fa-globe" />
@@ -85,14 +88,10 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>One more thing</h2>
+            <h2>About Me</h2>
           </header>
           <p>
-            Aliquam ante ac id. Adipiscing interdum lorem praesent fusce
-            pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed
-            adipiscing eu amet interdum lorem blandit vis ac commodo aliquet
-            integer vulputate phasellus lorem ipsum dolor lorem magna consequat
-            sed etiam adipiscing interdum.
+          I am a passionate software engineer, artist, and IT expert. I have traveled the world, and experience in a variety of fields. My specialization is microservices like APIs, packages, and library creation.
           </p>
         </div>
         <Scroll type="id" element="four">
@@ -184,7 +183,7 @@ const IndexPage = () => (
             </div>
           </div>
         </form>
-        <Link to="/Elements"> Check out Elements page</Link>
+        <Link to="/Elements"> Check out muh Elements</Link>
       </div>
       <Footer />
     </section>

@@ -1591,7 +1591,25 @@
 
 	}
 
-	.copyleft {
-		display:inline-block;
-		transform: rotate(180deg);
-	  }
+.copyleft {
+	display:inline-block;
+	transform: rotate(180deg);
+}
+
+#everise {
+	background: url("../images/everise.jpg");
+	background-size: cover;
+	background-position: center;
+	// background-size: 300px 100px;
+		opacity: .5;
+		transition: opacity .50s ease-in-out;
+		-moz-transition: opacity .50s ease-in-out;
+		-webkit-transition: opacity .50s ease-in-out;
+		
+}
+#everise:hover{
+	opacity: 1;
+}
+
+
+
