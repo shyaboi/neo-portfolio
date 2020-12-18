@@ -12,6 +12,7 @@ const sections = [
   { id: 'one', bg: require('../assets/images/pic01.jpg') },
   { id: 'two', bg: require('../assets/images/pic02.jpg') },
   { id: 'three', bg: require('../assets/images/pic03.jpg') },
+  { id: 'four', bg: require('../assets/images/pic04.jpg') },
 ];
 const IndexPage = () => (
   <Layout>
@@ -45,35 +46,27 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>My Hobbies</h2>
+            <h2>Projects</h2>
           </header>
           <p>
-            I love creating art, music, and code; Traveling the world.
+            These are some of the projects I have been a part of.
           </p>
           <ul className="icons-grid">
             <li>
               <span className="icon major fa fa-code" />
-              <h3>Programming</h3>
+              <h3>Open Flags API</h3>
             </li>
             <li>
               <span className="icon major fa fa-music" />
-              <h3>Music</h3>
-            </li>
-            <li>
-              <span className="icon major fa fa-camera-retro" />
-              <h3>Photography</h3>
+              <h3>nPoP</h3>
             </li>
             <li>
               <span className="icon major fa fa-globe" />
-              <h3>Traveling</h3>
+              <h3>Dingus Crew Community</h3>
             </li>
             <li>
               <span className="icon major fa fa-paint-brush" />
-              <h3>Art</h3>
-            </li>
-            <li>
-              <span className="icon major fa fa-gamepad" />
-              <h3>Gaming</h3>
+              <h3>Other things</h3>
             </li>
           </ul>
         </div>
@@ -101,6 +94,53 @@ const IndexPage = () => (
             integer vulputate phasellus lorem ipsum dolor lorem magna consequat
             sed etiam adipiscing interdum.
           </p>
+        </div>
+        <Scroll type="id" element="four">
+          <a href="#four" className="goto-next ">
+            Next
+          </a>
+        </Scroll>
+      </div>
+    </section>
+
+    <section id="four" className="main special">
+      <div className="container">
+        <span className="image fit primary">
+          <img src={sections[3].bg} alt="" />
+        </span>
+        <div className="content">
+          <header className="major">
+            <h2>My Hobbies</h2>
+          </header>
+          <p>
+            I love creating art, music, and code; Traveling the world.
+          </p>
+          <ul className="icons-grid">
+            <li>
+              <span className="icon major fa fa-code" />
+              <h3>Programming</h3>
+            </li>
+            <li>
+              <span className="icon major fa fa-music" />
+              <h3>Music</h3>
+            </li>
+            {/* <li>
+              <span className="icon major fa fa-camera-retro" />
+              <h3>Photography</h3>
+            </li> */}
+            <li>
+              <span className="icon major fa fa-globe" />
+              <h3>Traveling</h3>
+            </li>
+            <li>
+              <span className="icon major fa fa-paint-brush" />
+              <h3>Art</h3>
+            </li>
+            {/* <li>
+              <span className="icon major fa fa-gamepad" />
+              <h3>Gaming</h3>
+            </li> */}
+          </ul>
         </div>
         <Scroll type="id" element="footer">
           <a href="#footer" className="goto-next ">
