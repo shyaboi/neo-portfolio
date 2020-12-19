@@ -15,22 +15,22 @@ module.exports = {
     {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      url: 'https://github.com/shyaboi',
     },
     {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
+      icon: 'fa-linkedin-square',
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/shyaboi/',
     },
     {
-      icon: 'fa-facebook',
-      name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
+      icon: 'fa-wordpress',
+      name: 'WordPress',
+      url: 'https://ian-sears.com/2020/11/14/how-to-api/',
     },
     {
       icon: 'fa-envelope-o',
       name: 'Email',
-      url: 'mailto:anubhav.srivastava00@gmail.com',
+      url: 'mailto:ian.shane.sears@gmail.com',
     },
   ],
 };
