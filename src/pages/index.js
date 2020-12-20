@@ -27,10 +27,10 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2 id='titles'>1st Thing</h2>
+            <h2 id='titles'>Greetings</h2>
           </header>
           <p>
-            I am a passionate software engineer, artist, and IT expert. I have traveled the world, and experience in a variety of fields. My specialization is microservices like APIs, packages, and library creation. 
+          I'm a Software Engineer with a passion for learning new technologies and strategies for engineering eifficiant software solutions. Innovative problem-solver with strengths in creativity, and building projects from concept to execution. Diverse background internationally, artistically, and professionally. Delivering powerful, and unique software solutions.<br></br>deutsche, 日本語、中文
           </p>
         </div>
         <Scroll type="id" element="two">
@@ -51,7 +51,7 @@ const IndexPage = () => (
             <h2 id='titles'>Projects</h2>
           </header>
           <p>
-            These are some of the projects I have been a part of.
+            Projects I have contributed to.
           </p>
           <ul className="icons-grid">
             <li>
@@ -99,10 +99,10 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2 id='titles'>About Me</h2>
+            <h2 id='titles'>Free Time</h2>
           </header>
           <p>
-          I am a passionate software engineer, artist, and IT expert. I have traveled the world, and experience in a variety of fields. My specialization is microservices like APIs, packages, and library creation.
+          I love playing games <br></br>(Europa Universalis 4 is my most played game). <br></br> I have built a variety of applications, sites, and servers. I recently started working with Raspberry Pis, and Arduinos. I also love creating music and digital art. My specialization is microservices like APIs, packages, and library creation.
           </p>
         </div>
         <Scroll type="id" element="four">
@@ -123,7 +123,7 @@ const IndexPage = () => (
             <h2 id='titles'>My Hobbies</h2>
           </header>
           <p>
-            I love creating art, music, and code; Traveling the world.
+            I love creating art, music, code and Traveling the world.
           </p>
           <ul className="icons-grid">
             <li>
