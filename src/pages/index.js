@@ -27,7 +27,7 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2></h2>
+            <h2 id='titles'>1st Thing</h2>
           </header>
           <p>
             I am a passionate software engineer, artist, and IT expert. I have traveled the world, and experience in a variety of fields. My specialization is microservices like APIs, packages, and library creation. 
@@ -48,24 +48,39 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>Projects</h2>
+            <h2 id='titles'>Projects</h2>
           </header>
           <p>
             These are some of the projects I have been a part of.
           </p>
           <ul className="icons-grid">
             <li>
-              <span className="icon major fa fa-code" />
-              <h3>Open Flags API</h3>
-            </li>
-            <li id='everise'>
-            <p id='eP'>Maintain and create software tools for Everise IT and logistics</p>
-            </li>
-            <li>
-              <p>Dingus Crew Community and somethins else and junk</p>
+          <a href='https://openflags.net'>
+              <h6 id='jerbz'>Open Flags</h6>
+              <span className="icon fas fa-flag-checkered fa-1x" />
+              <h6>Sofwate Engineer</h6>
+            </a>
             </li>
             <li>
-              <h3>Other things</h3>
+          <a href='https://weareeverise.com/'>
+              <h6 id='jerbz'>Everise</h6>
+              <span className="icon  fas fa-windows fa-1x" />
+              <h6>System Administrator</h6>
+            </a>
+            </li>
+            <li>
+          <a href='https://npop.io'>
+              <h6 id='jerbz'>nPoP</h6>
+              <span className="icon fas fa-code" />
+              <h6>Sofwate Engineer</h6>
+            </a>
+            </li>
+            <li>
+          <a href='https://ytel.com'>
+              <h6 id='jerbz'>Ytel</h6>
+              <span className="icon fas fa-mobile" />
+              <h6>Support Engineer</h6>
+            </a>
             </li>
           </ul>
         </div>
@@ -84,7 +99,7 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>About Me</h2>
+            <h2 id='titles'>About Me</h2>
           </header>
           <p>
           I am a passionate software engineer, artist, and IT expert. I have traveled the world, and experience in a variety of fields. My specialization is microservices like APIs, packages, and library creation.
@@ -105,7 +120,7 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>My Hobbies</h2>
+            <h2 id='titles'>My Hobbies</h2>
           </header>
           <p>
             I love creating art, music, and code; Traveling the world.
@@ -119,10 +134,6 @@ const IndexPage = () => (
               <span className="icon major fa fa-music" />
               <h3>Music</h3>
             </li>
-            {/* <li>
-              <span className="icon major fa fa-camera-retro" />
-              <h3>Photography</h3>
-            </li> */}
             <li>
               <span className="icon major fa fa-globe" />
               <h3>Traveling</h3>
@@ -148,7 +159,7 @@ const IndexPage = () => (
     <section id="footer">
       <div className="container">
         <header className="major">
-          <h2>Get in touch</h2>
+          <h2 id='titles'>Get in touch</h2>
         </header>
         <form method="post" action="#">
           <div className="row gtr-uniform">

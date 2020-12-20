@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <section id="header">
       <header className="major">
-        <h1>{config.heading}</h1>
+        <h1 id='titles'>{config.heading}</h1>
         <p>{config.subHeading}</p>
       </header>
       <div className="container">
