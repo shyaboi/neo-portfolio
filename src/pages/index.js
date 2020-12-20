@@ -60,15 +60,11 @@ const IndexPage = () => (
             </li>
             <li id='everise'>
             <p id='eP'>Maintain and create software tools for Everise IT and logistics</p>
-          {/* <img src={everise} alt="everise logo" className="" width='90' /> */}
-              {/* <span className="icon major fa fa-music" /> */}
             </li>
             <li>
-              <span className="icon major fa fa-globe" />
-              <h3>Dingus Crew Community</h3>
+              <p>Dingus Crew Community and somethins else and junk</p>
             </li>
             <li>
-              <span className="icon major fa fa-paint-brush" />
               <h3>Other things</h3>
             </li>
           </ul>
