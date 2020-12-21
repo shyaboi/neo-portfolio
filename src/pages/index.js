@@ -30,7 +30,7 @@ const IndexPage = () => (
             <h2 id='titles'>Greetings</h2>
           </header>
           <p>
-          I'm a Software Engineer with a passion for learning new technologies and strategies for engineering eifficiant software solutions. Innovative problem-solver with strengths in creativity, and building projects from concept to execution. Diverse background internationally, artistically, and professionally. Delivering powerful, and unique software solutions.<br></br>deutsche, 日本語、中文
+          I'm a Software Engineer with a passion for learning new technologies and strategies for engineering eifficiant software solutions. Innovative problem-solver with strengths in creativity, and building projects from concept to execution. Diverse background internationally, artistically, and professionally. Delivering powerful, and unique software solutions. My specializations are microservices like APIs, packages, and library creation.<br></br>deutsche, 日本語、中文
           </p>
         </div>
         <Scroll type="id" element="two">
@@ -102,7 +102,7 @@ const IndexPage = () => (
             <h2 id='titles'>Free Time</h2>
           </header>
           <p>
-          I love playing games <br></br>(Europa Universalis 4 is my most played game). <br></br> I have built a variety of applications, sites, and servers. I recently started working with Raspberry Pis, and Arduinos. I also love creating music and digital art. My specialization is microservices like APIs, packages, and library creation.
+          I love playing games <br></br>(Europa Universalis 4 is my most played game). <br></br> I have built a variety of applications, sites, and servers. I recently started working with Raspberry Pis, and Arduinos. I also love creating music and digital art. 
           </p>
         </div>
         <Scroll type="id" element="four">
