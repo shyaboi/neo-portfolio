@@ -8,7 +8,6 @@ import Scroll from '../components/Scroll';
 import overLayPic from '../assets/images/overlay.png';
 import { Link } from 'gatsby';
 
-const everise = require('../assets/images/everise.jpg')
 
 const sections = [
   { id: 'one', bg: require('../assets/images/pic01.jpg') },
@@ -123,7 +122,7 @@ const IndexPage = () => (
             <h2 id='titles'>My Hobbies</h2>
           </header>
           <p>
-            I love creating art, music, code and Traveling the world.
+            I love creating art, music, code and traveling the world.
           </p>
           <ul className="icons-grid">
             <li>
