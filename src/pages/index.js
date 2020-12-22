@@ -21,6 +21,7 @@ import emailjs from 'emailjs-com';
       }, (error) => {
           console.log(error.text);
       });
+      window.location.reload(false);
       alert('Thing sent, We will be in touch shortly ( ͡° ͜ʖ ͡°)')
     }
 
