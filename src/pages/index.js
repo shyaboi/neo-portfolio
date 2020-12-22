@@ -24,6 +24,7 @@ import emailjs from 'emailjs-com';
       alert('Thing sent, We will be in touch shortly ( ͡° ͜ʖ ͡°)')
     }
 
+
 const sections = [
   { id: 'one', bg: require('../assets/images/pic01.jpg') },
   { id: 'two', bg: require('../assets/images/pic02.jpg') },
