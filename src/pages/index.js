@@ -7,7 +7,22 @@ import Footer from '../components/Footer';
 import Scroll from '../components/Scroll';
 import overLayPic from '../assets/images/overlay.png';
 import { Link } from 'gatsby';
+import emailjs from 'emailjs-com';
 
+
+
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('gmail', 'template_v9ocE0n7', e.target, 'user_Y70bCiqtATYVD9wzAQWVy')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      alert('Thing sent, We will be in touch shortly ( ͡° ͜ʖ ͡°)')
+    }
 
 const sections = [
   { id: 'one', bg: require('../assets/images/pic01.jpg') },
@@ -160,13 +175,13 @@ const IndexPage = () => (
         <header className="major">
           <h2 id='titles'>Get in touch</h2>
         </header>
-        <form method="post" action="#">
+        <form method="post" onSubmit={sendEmail}>
           <div className="row gtr-uniform">
             <div className="col-6 col-12-xsmall">
-              <input type="text" name="name" id="name" placeholder="Name" />
+              <input type="text" name="user_name" id="name" placeholder="Name" />
             </div>
             <div className="col-6 col-12-xsmall">
-              <input type="email" name="email" id="email" placeholder="Email" />
+              <input type="email" name="user_email" id="email" placeholder="Email" />
             </div>
             <div className="col-12">
               <textarea
