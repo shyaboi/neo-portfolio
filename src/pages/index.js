@@ -46,7 +46,7 @@ const IndexPage = () => (
             <h2 id='titles'>Greetings</h2>
           </header>
           <p>
-          I'm a Software Engineer with a passion for learning new technologies and strategies for engineering eifficiant software solutions. Innovative problem-solver with strengths in creativity, and building projects from concept to execution. Diverse background internationally, artistically, and professionally. Delivering powerful, and unique software solutions. My specializations are microservices like APIs, packages, and library creation.<br></br>deutsche, 日本語、中文
+          I have a passion for learning new technologies and strategies for engineering eifficiant software solutions. Innovative problem-solver with strengths in creativity, and building projects from concept to execution. Diverse background internationally, artistically, and professionally. Delivering powerful, and unique software solutions. My specializations are microservices like APIs, package, and library creation.<br></br>deutsche, 日本語、中文
           </p>
         </div>
         <Scroll type="id" element="two">
@@ -67,7 +67,7 @@ const IndexPage = () => (
             <h2 id='titles'>Projects</h2>
           </header>
           <p>
-            Projects I have contributed to.
+            Recent Projects I Have Contributed To.
           </p>
           <ul className="icons-grid">
             <li>
@@ -118,7 +118,7 @@ const IndexPage = () => (
             <h2 id='titles'>Free Time</h2>
           </header>
           <p>
-          I love playing games <br></br>(Europa Universalis 4 is my most played game). <br></br> I have built a variety of applications, sites, and servers. I recently started working with Raspberry Pis, and Arduinos. I also love creating music and digital art. 
+          I like also play video games <br></br>(Europa Universalis 4 is my most played game). <br></br> I build a variety of applications, sites, and server as solo projects or colaborate with friends. I recently started working with Raspberry Pis, and Arduinos more in building robotics. I also love creating all different kinds of music; as well as creating digital art by blending photography with digital painting, and animation. I have lived and traveled to many countries, and would love to see even more of the world!
           </p>
         </div>
         <Scroll type="id" element="four">
