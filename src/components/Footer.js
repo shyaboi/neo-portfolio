@@ -18,11 +18,11 @@ export default function Footer() {
       </ul>
       <ul className="copyright">
         <li><span class="copyleft">&copy;</span>All Wrongs Reserved</li>
-        <li>
+        {/* <li>
           Design: <a href="http://html5up.net">HTML5 UP</a>
-        </li>
+        </li> */}
         <li>
-          All Images From: <a href="https://stock.adobe.com/contributor/209064146/Ian">My Adobe Portfolio</a>
+          Images From: <a href="https://stock.adobe.com/contributor/209064146/Ian">My Adobe Portfolio</a>
         </li>
       </ul>
     </footer>

@@ -22,7 +22,7 @@ import emailjs from 'emailjs-com';
           console.log(error.text);
       });
       window.location.reload(false);
-      alert('Thing sent, We will be in touch shortly ( ͡° ͜ʖ ͡°)')
+      alert('Your message has been sent, We will be in touch shortly ( ͡° ͜ʖ ͡°)')
     }
 
 
@@ -46,7 +46,7 @@ const IndexPage = () => (
             <h2 id='titles'>Greetings</h2>
           </header>
           <p>
-          I have a passion for learning new technologies and strategies for engineering eifficiant software solutions. Innovative problem-solver with strengths in creativity, and building projects from concept to execution. Diverse background internationally, artistically, and professionally. Delivering powerful, and unique software solutions. My specializations are microservices like APIs, package, and library creation.<br></br>deutsche, 日本語、中文
+          I have a passion for learning new technologies and strategies for engineering eifficiant software solutions. Innovative problem-solver with strengths in creativity, and building projects from concept to execution. Diverse background internationally, artistically, and professionally. Delivering powerful, and unique software solutions. My specializations are microservices, APIs, package, and library creation.<br></br>deutsche, 日本語、中文
           </p>
         </div>
         <Scroll type="id" element="two">
@@ -71,17 +71,18 @@ const IndexPage = () => (
           </p>
           <ul className="icons-grid">
             <li>
+          <a href='https://uselessapi.com/'>
+              <h6 id='jerbz'>UseLess API</h6>
+              <span className="icon fas fa-server fa-1x" />
+              <i class=""></i>
+              <h6>Software Engineer</h6>
+            </a>
+            </li>
+            <li>
           <a href='https://openflags.net'>
               <h6 id='jerbz'>Open Flags</h6>
               <span className="icon fas fa-flag-checkered fa-1x" />
               <h6>Sofwate Engineer</h6>
-            </a>
-            </li>
-            <li>
-          <a href='https://weareeverise.com/'>
-              <h6 id='jerbz'>Everise</h6>
-              <span className="icon  fas fa-windows fa-1x" />
-              <h6>System Administrator</h6>
             </a>
             </li>
             <li>
@@ -206,7 +207,7 @@ const IndexPage = () => (
             </div>
           </div>
         </form>
-        <Link to="/Elements"> Check out muh Elements</Link>
+        {/* <Link to="/Elements"> Check out muh Elements</Link> */}
       </div>
       <Footer />
     </section>
