@@ -1,16 +1,19 @@
 {
-  "name": "gatsby-starter-highlights",
+  "name": "ian-sears-portfolio",
   "version": "0.0.1",
-  "description": "Gatsby.js V2 starter template based on Highlights by HTML5 UP",
+  "description": "Ian Sears Porfolio",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-highlights.git"
+    "url": "https://github.com/shyaboi/neo-portfolio.git"
   },
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "Ian Sears",
+    "email": "ian.shane.sears@gmail.com"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "emailjs-com": "^2.6.4",
     "gatsby": "^2.20.2",
     "gatsby-plugin-manifest": "^2.3.1",
@@ -20,7 +23,9 @@
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-fontawesome": "^1.7.1",
     "react-helmet": "^5.2.1",
+    "react-icons": "^4.2.0",
     "react-images": "^1.1.0",
     "react-scrollspy": "^3.4.2",
     "smoothscroll-polyfill": "^0.4.4"
@@ -45,8 +50,5 @@
     "gatsby-starter-highlights"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/anubhavsrivastava/gatsby-starter-highlights/issues"
-  },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-highlights#readme"
+  "homepage": "https://ianss.dev"
 }
