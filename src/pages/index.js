@@ -67,7 +67,7 @@ const IndexPage = () => (
             <h2 id='titles'>Projects</h2>
           </header>
           <p>
-            Recent Projects I Have Contributed To.
+            Projects I have been a part of:
           </p>
           <ul className="icons-grid">
             <li>
@@ -75,28 +75,24 @@ const IndexPage = () => (
               <h6 id='jerbz'>UseLess API</h6>
               <span className="icon fas fa-server fa-1x" />
               <i class=""></i>
-              <h6>Software Engineer</h6>
             </a>
             </li>
             <li>
           <a href='https://openflags.net'>
               <h6 id='jerbz'>Open Flags</h6>
               <span className="icon fas fa-flag-checkered fa-1x" />
-              <h6>Sofwate Engineer</h6>
             </a>
             </li>
             <li>
-          <a href='https://npop.io'>
-              <h6 id='jerbz'>nPoP</h6>
+          <a href='https://radroutes.com'>
+              <h6 id='jerbz'>Rad Routes</h6>
               <span className="icon fas fa-code" />
-              <h6>Sofwate Engineer</h6>
             </a>
             </li>
             <li>
           <a href='https://ytel.com'>
               <h6 id='jerbz'>Ytel</h6>
               <span className="icon fas fa-mobile" />
-              <h6>Support Engineer</h6>
             </a>
             </li>
           </ul>
@@ -119,7 +115,7 @@ const IndexPage = () => (
             <h2 id='titles'>Free Time</h2>
           </header>
           <p>
-          I like also play video games <br></br>(Europa Universalis 4 is my most played game). <br></br> I build a variety of applications, sites, and server as solo projects or colaborate with friends. I recently started working with Raspberry Pis, and Arduinos more in building robotics. I also love creating all different kinds of music; as well as creating digital art by blending photography with digital painting, and animation. I have lived and traveled to many countries, and would love to see even more of the world!
+          I build a variety of applications, sites, and server as solo projects or colaborate with friends. I recently started working with Raspberry Pis, and Arduinos more in building robotics. I also love creating all different kinds of music; as well as creating digital art by blending photography with digital painting, and animation. I have lived and traveled to many countries, and would love to see even more of the world! 
           </p>
         </div>
         <Scroll type="id" element="four">
