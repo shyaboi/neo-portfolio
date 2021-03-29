@@ -67,9 +67,15 @@ const IndexPage = () => (
             <h2 id='titles'>Projects</h2>
           </header>
           <p>
-            Projects I have been a part of:
+            Recent Projects:
           </p>
           <ul className="icons-grid">
+            <li>
+          <a href='https://radroutes.com'>
+              <h6 id='jerbz'>Rad Routes</h6>
+              <span className="icon fas fa-code" />
+            </a>
+            </li>
             <li>
           <a href='https://uselessapi.com/'>
               <h6 id='jerbz'>UseLess API</h6>
@@ -81,12 +87,6 @@ const IndexPage = () => (
           <a href='https://openflags.net'>
               <h6 id='jerbz'>Open Flags</h6>
               <span className="icon fas fa-flag-checkered fa-1x" />
-            </a>
-            </li>
-            <li>
-          <a href='https://radroutes.com'>
-              <h6 id='jerbz'>Rad Routes</h6>
-              <span className="icon fas fa-code" />
             </a>
             </li>
             <li>
