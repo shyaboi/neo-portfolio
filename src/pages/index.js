@@ -73,13 +73,13 @@ const IndexPage = () => (
             <li>
           <a href='https://radroutes.com'>
               <h6 id='jerbz'>Rad Routes</h6>
-              <span className="icon fas fa-code" />
+              <span className="icon fas fa-server fa-1x" />
             </a>
             </li>
             <li>
-          <a href='https://uselessapi.com/'>
-              <h6 id='jerbz'>UseLess API</h6>
-              <span className="icon fas fa-server fa-1x" />
+          <a href='https://www.legendwebworks.com/'>
+              <h6 id='jerbz'>Legend Web Works</h6>
+              <span className="icon fas fa-code fa-1x" />
               <i class=""></i>
             </a>
             </li>
@@ -92,7 +92,7 @@ const IndexPage = () => (
             <li>
           <a href='https://ytel.com'>
               <h6 id='jerbz'>Ytel</h6>
-              <span className="icon fas fa-mobile" />
+              <span className="icon fas fa-mobile fa-1x" />
             </a>
             </li>
           </ul>
