@@ -81,9 +81,9 @@ const IndexPage = () => (
             </a>
             </li>
             <li>
-          <a href='https://openflags.net'>
-              <h6 id='jerbz'>Open Flags</h6>
-              <span className="icon fas fa-flag-checkered fa-1x" />
+          <a href='https://weareeverise.com/'>
+              <h6 id='jerbz'>Everise</h6>
+              <span className="icon fas fa-globe fa-1x" />
             </a>
             </li>
             <li>
