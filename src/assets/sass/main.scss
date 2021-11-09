@@ -1161,7 +1161,7 @@
 
 		.container {
 			@include padding($size-padding-tb, $size-padding-lr, (0, 0, 5em, 0));
-			background: transparentize(_palette(bg), 0.05);
+			background: transparentize(_palette(bg), 0.25);
 			box-shadow: inset 0 1px 0 0 _palette(border);
 
 			&:before {

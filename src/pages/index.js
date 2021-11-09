@@ -12,18 +12,18 @@ import emailjs from 'emailjs-com';
 
 
 
-  function sendEmail(e) {
-    e.preventDefault();
+function sendEmail(e) {
+  e.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_v9ocE0n7', e.target, 'user_Y70bCiqtATYVD9wzAQWVy')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      window.location.reload(false);
-      alert('Your message has been sent, We will be in touch shortly ( ͡° ͜ʖ ͡°)')
-    }
+  emailjs.sendForm('gmail', 'template_v9ocE0n7', e.target, 'user_Y70bCiqtATYVD9wzAQWVy')
+    .then((result) => {
+      console.log(result.text);
+    }, (error) => {
+      console.log(error.text);
+    });
+  window.location.reload(false);
+  alert('Your message has been sent, We will be in touch shortly ( ͡° ͜ʖ ͡°)')
+}
 
 
 const sections = [
@@ -46,7 +46,8 @@ const IndexPage = () => (
             <h2 id='titles'>Greetings</h2>
           </header>
           <p>
-          I have a passion for learning new technologies and strategies for engineering eifficiant software solutions. Innovative problem-solver with strengths in creativity, and building projects from concept to execution. Diverse background internationally, artistically, and professionally. Delivering powerful, and unique software solutions. My specializations are microservices, APIs, package, and library creation.<br></br>deutsche, 日本語、中文
+            I have a passion for learning new technologies and strategies for engineering eifficiant software solutions. Innovative problem-solver with strengths in creativity, and building projects from concept to execution. Diverse background internationally, artistically, and professionally. Delivering powerful, and unique software solutions. My specializations are componentization, microservices, APIs, package, and library creation.
+            {/* <br></br>deutsche, 日本語、中文 */}
           </p>
         </div>
         <Scroll type="id" element="two">
@@ -64,33 +65,34 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2 id='titles'>Projects</h2>
+            <h2 id='titles'>Contributions</h2>
           </header>
           <ul className="icons-grid">
             <li>
-          <a href='https://www.legendwebworks.com/about/listing/ian-sears/'>
-              <h6 id='jerbz'>Legend Web Works</h6>
-              <span className="icon fas fa-code fa-1x" />
-              <i class=""></i>
-            </a>
+              <a href='https://dscout.com'>
+                <h6 id='jerbz'>dscout</h6>
+                <span className="icon fas fa-users fa-1x" />
+              </a>
             </li>
             <li>
-          <a href='https://radroutes.com'>
+              <a href='https://www.legendwebworks.com/'>
+                <h6 id='jerbz'>Legend Web Works</h6>
+                <span className="icon fas fa-code fa-1x" />
+                <i class=""></i>
+              </a>
+            </li>
+            <li>
+
+            <a href='https://radroutes.com'>
               <h6 id='jerbz'>Rad Routes</h6>
               <span className="icon fas fa-server fa-1x" />
             </a>
             </li>
             <li>
-          <a href='https://openflags.net'>
-              <h6 id='jerbz'>Open Flags</h6>
-              <span className="icon fas fa-flag-checkered fa-1x" />
-            </a>
-            </li>
-            <li>
-          <a href='https://ytel.com'>
-              <h6 id='jerbz'>Ytel</h6>
-              <span className="icon fas fa-mobile fa-1x" />
-            </a>
+              <a href='https://ytel.com'>
+                <h6 id='jerbz'>Ytel</h6>
+                <span className="icon fas fa-mobile fa-1x" />
+              </a>
             </li>
           </ul>
         </div>
@@ -112,7 +114,7 @@ const IndexPage = () => (
             <h2 id='titles'>Free Time</h2>
           </header>
           <p>
-          I build a variety of applications, sites, and server as solo projects or colaborate with friends. I recently started working with Raspberry Pis, and Arduinos more in building robotics. I also love creating all different kinds of music; as well as creating digital art by blending photography with digital painting, and animation. I have lived and traveled to many countries, and would love to see even more of the world! 
+            I build a variety of applications, sites, and servers; solo or collaboratively. I recently started working with Raspberry Pis, and Arduinos more in building robotics. I also love creating all different kinds of music; as well as creating digital art by blending photography with digital painting, and animation. I have lived and traveled to many countries, and would love to see even more of the world!
           </p>
         </div>
         <Scroll type="id" element="four">
