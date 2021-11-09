@@ -70,28 +70,28 @@ const IndexPage = () => (
           <ul className="icons-grid">
             <li>
               <a href='https://dscout.com'>
-                <h6 id='jerbz'>dscout</h6>
-                <span className="icon fas fa-users fa-1x" />
+                <h4 id='jerbz'>dscout</h4>
+                <span className="icon fas fa-users fa-3x" />
               </a>
             </li>
             <li>
               <a href='https://www.legendwebworks.com/'>
-                <h6 id='jerbz'>Legend Web Works</h6>
-                <span className="icon fas fa-code fa-1x" />
+                <h4 id='jerbz'>Legend Web Works</h4>
+                <span className="icon fas fa-code fa-3x" />
                 <i class=""></i>
               </a>
             </li>
             <li>
 
             <a href='https://radroutes.com'>
-              <h6 id='jerbz'>Rad Routes</h6>
-              <span className="icon fas fa-server fa-1x" />
+              <h4 id='jerbz'>Rad Routes</h4>
+              <span className="icon fas fa-server fa-3x" />
             </a>
             </li>
             <li>
               <a href='https://ytel.com'>
-                <h6 id='jerbz'>Ytel</h6>
-                <span className="icon fas fa-mobile fa-1x" />
+                <h4 id='jerbz'>Ytel</h4>
+                <span className="icon fas fa-mobile fa-3x" />
               </a>
             </li>
           </ul>
