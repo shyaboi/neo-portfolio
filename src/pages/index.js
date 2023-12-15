@@ -83,9 +83,9 @@ const IndexPage = () => (
             </li>
             <li>
 
-            <a href='https://relay.busache.com'>
-              <h4 id='jerbz'>Busache Relay</h4>
-              <span className="icon fas fa-server fa-3x" />
+            <a href='https://techbootcamps.utexas.edu/coding/'>
+              <h4 id='jerbz'>UT Austin / edX</h4>
+              <span className="icon fas  fa-book fa-3x" />
             </a>
             </li>
             <li>
