@@ -28,15 +28,15 @@ export default function Footer() {
 
       </a>
       </li>
-        <li>
+        {/* <li>
         <a href="https://ian-sears.com/2020/11/14/how-to-api/">
       <FaWordpress />
       <span className="label">Blog</span>
 
       </a>
-      </li>
+      </li> */}
         <li>
-        <a href="mailto:ian.shane.sears@gmail.com">
+        <a href="mailto:ian@radlabz.com">
       <FaMailBulk />
       <span className="label">Email</span>
       </a>
@@ -53,7 +53,7 @@ export default function Footer() {
         })} */}
       </ul>
       <ul className="copyright">
-        <li><span class="copyleft">&copy;</span>All Wrongs Reserved</li>
+        <li><span className="copyleft">&copy;</span>All Wrongs Reserved</li>
         {/* <li>
           Design: <a href="http://html5up.net">HTML5 UP</a>
         </li> */}

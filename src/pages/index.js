@@ -9,24 +9,30 @@ import overLayPic from '../assets/images/overlay.png';
 import { Link } from 'gatsby';
 import emailjs from 'emailjs-com';
 
-
-
-
 function sendEmail(e) {
   e.preventDefault();
 
-  emailjs.sendForm('gmail', 'template_v9ocE0n7', e.target, 'user_Y70bCiqtATYVD9wzAQWVy')
-    .then((result) => {
-      console.log(result.text);
-    }, (error) => {
-      console.log(error.text);
-    });
+  emailjs
+    .sendForm(
+      'gmail',
+      'template_v9ocE0n7',
+      e.target,
+      'user_Y70bCiqtATYVD9wzAQWVy'
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
   window.location.reload(false);
-  alert('Your message has been sent, We will be in touch shortly ( ͡° ͜ʖ ͡°)')
+  alert('Your message has been sent, We will be in touch shortly ( ͡° ͜ʖ ͡°)');
 }
 
-
 const sections = [
+  { id: 'zero', bg: require('../assets/images/bg.jpg') },
   { id: 'one', bg: require('../assets/images/pic01.jpg') },
   { id: 'two', bg: require('../assets/images/pic02.jpg') },
   { id: 'three', bg: require('../assets/images/pic03.jpg') },
@@ -35,7 +41,6 @@ const sections = [
 const IndexPage = () => (
   <Layout>
     <Header />
-
     <section id="one" className="main special">
       <div className="container">
         <span className="image fit primary">
@@ -43,10 +48,20 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2 id='titles'>Greetings</h2>
+            <h2 id="titles">Greetings</h2>
           </header>
           <p>
-            I have a passion for learning new technologies and strategies for engineering eifficiant software solutions. Innovative problem-solver with strengths in creativity, and building projects from concept to execution. Diverse background internationally, artistically, and professionally. Delivering powerful, and unique software solutions. My specializations are componentization, microservices, APIs, package, and library creation.
+            I am a passionate software engineer. Innovative problem-solver with
+            strengths in creativity, and building projects from concept to
+            execution. Diverse background internationally, artistically, and
+            professionally.
+          </p>
+
+          <p>
+            {' '}
+            Delivering powerful, and unique software solutions. Specializating
+            in componentization, microservices, APIs, and creating innovative
+            software solutions from concept to execution.
             {/* <br></br>deutsche, 日本語、中文 */}
           </p>
         </div>
@@ -65,35 +80,46 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2 id='titles'>Contributions</h2>
+            <h2 id="titles">Contributions</h2>
           </header>
-          <ul className="icons-grid">
-            <li>
-              <a href='https://dscout.com'>
-                <h4 id='jerbz'>dscout</h4>
-                <span className="icon fas fa-users fa-3x" />
-              </a>
-            </li>
-            <li>
-              <a href='https://www.legendwebworks.com/'>
-                <h4 id='jerbz'>Legend Web Works</h4>
-                <span className="icon fas fa-code fa-3x" />
-                <i class=""></i>
-              </a>
-            </li>
-            <li>
-
-            <a href='https://techbootcamps.utexas.edu/coding/'>
-              <h4 id='jerbz'>UT Austin / edX</h4>
-              <span className="icon fas  fa-book fa-3x" />
+          <ul className="icons-grid1">
+            <a href="https://dscout.com" className="no-underline">
+              <li className="no-underline">
+                <h4 className="jerbz no-underline">dscout</h4>
+                <span className="icon fas fa-users fa-3x no-underline" />
+              </li>
             </a>
-            </li>
-            <li>
-              <a href='https://ytel.com'>
-                <h4 id='jerbz'>Ytel</h4>
+            <a href="https://www.legendwebworks.com/">
+              <li>
+                <h4 className="jerbz">Legend Web Works</h4>
+                <span className="icon fas fa-code fa-3x" />
+                <i className=""></i>
+              </li>
+            </a>
+            <a href="https://techbootcamps.utexas.edu/coding/">
+              <li>
+                <h4 className="jerbz">UT Austin / edX</h4>
+                <span className="icon fas  fa-book fa-3x" />
+              </li>
+            </a>
+            <a href="https://ytel.com">
+              <li>
+                <h4 className="jerbz">Ytel</h4>
                 <span className="icon fas fa-mobile fa-3x" />
-              </a>
-            </li>
+              </li>
+            </a>
+            <a href="https://radlabz.com">
+              <li>
+                <h4 className="jerbz">RAD Labz</h4>
+                <span className="icon fas fa-flask fa-3x" />
+              </li>
+            </a>
+            <a href="https://radroutes.com">
+              <li>
+                <h4 className="jerbz">Relay</h4>
+                <span className="icon fas fa-qrcode fa-3x" />
+              </li>
+            </a>
           </ul>
         </div>
         <Scroll type="id" element="three">
@@ -111,10 +137,15 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2 id='titles'>Free Time</h2>
+            <h2 id="titles">Free Time</h2>
           </header>
           <p>
-            I build a variety of applications, sites, and servers; solo or collaboratively. I recently started working with Raspberry Pis, and Arduinos more in building robotics. I also love creating all different kinds of music; as well as creating digital art by blending photography with digital painting, and animation. I have lived and traveled to many countries, and would love to see even more of the world!
+            In my free time, I enjoy building a variety of applications,
+            websites, and servers, both solo and collaboratively. I have
+            recently ventured into robotics using Raspberry Pis and Arduinos.
+            Additionally, I am passionate about creating music and digital art
+            by blending photography with digital painting and animation. I have
+            a love for traveling and exploring new countries and cultures.
           </p>
         </div>
         <Scroll type="id" element="four">
@@ -132,11 +163,9 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2 id='titles'>My Hobbies</h2>
+            <h2 id="titles">My Hobbies</h2>
           </header>
-          <p>
-            I love creating art, music, code and traveling the world.
-          </p>
+          <p>I love creating art, music, code and traveling the world.</p>
           <ul className="icons-grid">
             <li>
               <span className="icon major fa fa-code" />
@@ -147,17 +176,21 @@ const IndexPage = () => (
               <h3>Music</h3>
             </li>
             <li>
+              <span className="icon major fa fa-paint-brush" />
+              <h3>Art</h3>
+            </li>
+            <li>
+              <span className="icon major fa fa-gamepad" />
+              <h3>Gaming</h3>
+            </li>
+            <li>
               <span className="icon major fa fa-globe" />
               <h3>Traveling</h3>
             </li>
             <li>
-              <span className="icon major fa fa-paint-brush" />
-              <h3>Art</h3>
+              <span className="icon major fa fa-language" />
+              <h3>Languages</h3>
             </li>
-            {/* <li>
-              <span className="icon major fa fa-gamepad" />
-              <h3>Gaming</h3>
-            </li> */}
           </ul>
         </div>
         <Scroll type="id" element="footer">
@@ -171,15 +204,25 @@ const IndexPage = () => (
     <section id="footer">
       <div className="container">
         <header className="major">
-          <h2 id='titles'>Get in touch</h2>
+          <h2 id="titles">Get in touch</h2>
         </header>
         <form method="post" onSubmit={sendEmail}>
           <div className="row gtr-uniform">
             <div className="col-6 col-12-xsmall">
-              <input type="text" name="user_name" id="name" placeholder="Name" />
+              <input
+                type="text"
+                name="user_name"
+                id="name"
+                placeholder="Name"
+              />
             </div>
             <div className="col-6 col-12-xsmall">
-              <input type="email" name="user_email" id="email" placeholder="Email" />
+              <input
+                type="email"
+                name="user_email"
+                id="email"
+                placeholder="Email"
+              />
             </div>
             <div className="col-12">
               <textarea
@@ -202,24 +245,26 @@ const IndexPage = () => (
             </div>
           </div>
         </form>
-        {/* <Link to="/Elements"> Check out muh Elements</Link> */}
       </div>
       <Footer />
     </section>
 
     <Scrollspy
-      items={sections.map(s => s.id)}
+      items={sections.map((s) => s.id)}
       currentClassName="active"
       offset={50}
       componentTag={'div'}
     >
-      {sections.map(s => {
+      {sections.map((s) => {
+        console.log(s.bg.default);
         return (
           <div
             key={s.id}
             className="main-bg"
             id={`${s.id}-bg`}
-            style={{ backgroundImage: `url(${overLayPic}), url(${s.bg})` }}
+            style={{
+              backgroundImage: `url(${overLayPic}), url(${s.bg.default})`,
+            }}
           />
         );
       })}

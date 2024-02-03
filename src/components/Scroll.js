@@ -22,13 +22,14 @@ class Scroll extends React.Component {
     smoothscroll.polyfill();
   }
   handleClick(e) {
+    console.log('honk');
     e.preventDefault();
     let elem = 0;
     let scroll = true;
     const { type, element, offset, timeout } = this.props;
     if (type && element) {
       switch (type) {
-        case 'class':
+        case 'className':
           elem = document.getElementsByClassName(element)[0];
           scroll = elem ? true : false;
           break;
