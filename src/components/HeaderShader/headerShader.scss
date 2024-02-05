@@ -36,25 +36,13 @@
     background-position: 0;
   }
   60% {
-    background-position: 280px;
+    background-position: 20rem;
   }
   100% {
-    background-position: 420px;
+    background-position: 33rem;
   }
 }
 
-@keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 280px;
-  }
-  100% {
-    background-position: 420px;
-  }
-}
-
-.honk { 
+.honk {
   color: #000;
 }

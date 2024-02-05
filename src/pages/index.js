@@ -32,11 +32,11 @@ function sendEmail(e) {
 }
 
 const sections = [
-  { id: 'zero', bg: require('../assets/images/bg.jpg') },
-  { id: 'one', bg: require('../assets/images/pic01.jpg') },
-  { id: 'two', bg: require('../assets/images/pic02.jpg') },
-  { id: 'three', bg: require('../assets/images/pic03.jpg') },
-  { id: 'four', bg: require('../assets/images/pic04.jpg') },
+  { id: 'zero', bg: require('../assets/images/bg.webp') },
+  { id: 'one', bg: require('../assets/images/pic1.webp') },
+  { id: 'two', bg: require('../assets/images/pic2.webp') },
+  { id: 'three', bg: require('../assets/images/pic3.webp') },
+  { id: 'four', bg: require('../assets/images/pic4.webp') },
 ];
 const IndexPage = () => (
   <Layout>
@@ -51,17 +51,22 @@ const IndexPage = () => (
             <h2 id="titles">Greetings</h2>
           </header>
           <p>
-            I am a passionate software engineer. Innovative problem-solver with
-            strengths in creativity, and building projects from concept to
-            execution. Diverse background internationally, artistically, and
-            professionally.
+            As a passionate software engineer, I bring a unique blend of
+            creativity, pragmatism, and time efficiency to my work. My
+            experience spans various roles where I've embraced leadership,
+            innovation, and technical excellence. I have a proven track record
+            in agile methodologies, mentoring teams to foster growth and
+            collaboration.
           </p>
 
           <p>
             {' '}
-            Delivering powerful, and unique software solutions. Specializating
-            in componentization, microservices, APIs, and creating innovative
-            software solutions from concept to execution.
+            My expertise extends across cloud infrastructure, programming
+            languages, and project management, allowing me to deliver powerful,
+            unique software solutions. Specializing in componentization,
+            microservices, APIs, and the front end, I am adept at transforming
+            innovative concepts into successful executions, underscoring my
+            diverse background and ability to navigate complex challenges.
             {/* <br></br>deutsche, 日本語、中文 */}
           </p>
         </div>
@@ -83,10 +88,10 @@ const IndexPage = () => (
             <h2 id="titles">Contributions</h2>
           </header>
           <ul className="icons-grid1">
-            <a href="https://dscout.com" className="no-underline">
-              <li className="no-underline">
-                <h4 className="jerbz no-underline">dscout</h4>
-                <span className="icon fas fa-users fa-3x no-underline" />
+            <a href="https://dscout.com">
+              <li>
+                <h4 className="jerbz">dscout</h4>
+                <span className="icon fas fa-users fa-3x" />
               </li>
             </a>
             <a href="https://www.legendwebworks.com/">
@@ -140,12 +145,23 @@ const IndexPage = () => (
             <h2 id="titles">Free Time</h2>
           </header>
           <p>
-            In my free time, I enjoy building a variety of applications,
-            websites, and servers, both solo and collaboratively. I have
-            recently ventured into robotics using Raspberry Pis and Arduinos.
-            Additionally, I am passionate about creating music and digital art
-            by blending photography with digital painting and animation. I have
-            a love for traveling and exploring new countries and cultures.
+            Outside the world of professional software engineering, I immerse
+            myself in a realm of creativity and exploration. I dedicate my free
+            time to crafting a diverse array of applications, websites, and
+            servers, both independently and in collaboration with others.
+            Venturing into the fascinating world of embeded engineering, and
+            electrical engineering. I experiment with sensors attached to
+            micro-controllers, or small computers to bring imaginative projects
+            to life.
+          </p>
+
+          <p>
+            {' '}
+            My artistic side flourishes through music and digital art creation,
+            where I blend photography with digital painting and animation,
+            crafting unique visual and auditory experiences. Additionally, my
+            passion for travel fuels my desire to explore new countries and
+            cultures, enriching my creativity and perspective.
           </p>
         </div>
         <Scroll type="id" element="four">
@@ -204,7 +220,11 @@ const IndexPage = () => (
     <section id="footer">
       <div className="container">
         <header className="major">
-          <h2 id="titles">Get in touch</h2>
+          <h2 id="titles">
+            <a href="mailto:org@radlabz.com?subject=Greetings%20RADlabz!%20XXX%20here&body=Dear%20RADlabz,%0A%0Akeep%20rockin'.%0A%0AThe%20best,%0AXXX">
+              Send Message to RADlabz
+            </a>
+          </h2>
         </header>
         <form method="post" onSubmit={sendEmail}>
           <div className="row gtr-uniform">
