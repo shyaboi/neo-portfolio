@@ -1409,8 +1409,8 @@ button,
       'transition',
       'background-color #{_duration(transition)} ease-in-out'
     );
-    background-color: _palette(border-bg);
-    background-image: url('../images/arrow.svg');
+    background-color: _palette(bg);
+    background-image: url('arrow.svg');
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 100%;
