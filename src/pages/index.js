@@ -222,7 +222,7 @@ const IndexPage = () => (
         <header className="major">
           <h2 id="titles">
             <a href="mailto:ian@radlabz.com?subject=Greetings%20RADlabz!%20XXX%20here&body=Dear%20RADlabz,%0A%0Akeep%20rockin'.%0A%0AThe%20best,%0AXXX">
-              Send Message to me 🙏
+              Send a message
             </a>
           </h2>
         </header>
