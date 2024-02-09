@@ -1013,13 +1013,8 @@ ul.icons-grid {
       margin: 0;
     }
 
-    &:nth-child(2n + 1) {
-      box-shadow: inset -1px 0 0 0 _palette(border), 1px 0 0 0 _palette(border);
-    }
-
     &:nth-child(2n + 3) {
       &:before {
-        background: _palette(border);
         content: '';
         display: block;
         height: 2px;
@@ -1037,6 +1032,12 @@ ul.icons-grid {
   }
   a {
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 480px) {
+    li {
+      width: 100%;
+    }
   }
 }
 
@@ -1084,6 +1085,11 @@ ul.icons-grid1 {
   }
   a {
     text-decoration: none;
+  }
+  @media screen and (max-width: 480px) {
+    li {
+      width: 100%;
+    }
   }
 }
 
@@ -1329,7 +1335,7 @@ button,
     color: _palette(accent1, fg-bold) !important;
 
     &:hover {
-      background-color: lighten(_palette(accent1, bg), 5);
+      background-color: darken(_palette(accent1, bg), 30);
     }
 
     &:active {
@@ -1410,7 +1416,7 @@ button,
       'background-color #{_duration(transition)} ease-in-out'
     );
     background-color: _palette(bg);
-    background-image: url('arrow.svg');
+    // background-image: url('../images/arrow.svg');
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 100%;
@@ -1429,6 +1435,36 @@ button,
 
     &:hover {
       background-color: _palette(border2-bg);
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: white;
+      top: 50%; /* Adjust this value to position the arrow vertically */
+      left: 50%;
+      transform-origin: 0 100%;
+      transition: transform 0.25s ease; /* Smooth transition for hover effect */
+    }
+
+    &::before {
+      width: 0.25em; /* The thickness of the arrow stems */
+      height: 60%; /* The length of the left side of the arrow */
+      transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+
+    &::after {
+      width: 0.25em; /* The thickness of the arrow stems */
+      height: 60%; /* The length of the right side of the arrow */
+      transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      /* This will make the arrow point upwards when hovered */
+      transform: translateX(0px) translateY(0) rotate(0deg);
+      // transform-origin: 0 0; /* Change transform origin to rotate back */
     }
   }
 }
@@ -1755,14 +1791,14 @@ button,
 
     &.icons-grid {
       a {
-        box-shadow: inset 0 1px 0 0 _palette(border) !important;
+        // box-shadow: inset 0 1px 0 0 _palette(border) !important;
         float: none;
         margin: _size(element-margin) 0 0 0;
         padding: _size(element-margin) 0 0 0;
         width: 100%;
 
         &:first-child {
-          box-shadow: none !important;
+          // box-shadow: none !important;
           margin-top: 0;
           padding: (_size(element-margin) * 0.5) 0 0 0;
         }
