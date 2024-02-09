@@ -14,10 +14,10 @@ function sendEmail(e) {
 
   emailjs
     .sendForm(
-      'gmail',
-      'template_v9ocE0n7',
+      'service_yvxlc3j',
+      'template_u356tto',
       e.target,
-      'user_Y70bCiqtATYVD9wzAQWVy'
+      'qRv4Jxcu2Ps5BBzUB'
     )
     .then(
       (result) => {
@@ -28,7 +28,7 @@ function sendEmail(e) {
       }
     );
   window.location.reload(false);
-  alert('Your message has been sent, We will be in touch shortly ( ͡° ͜ʖ ͡°)');
+  alert('Your message has been sent, We will be in touch shortly!');
 }
 
 const sections = [
@@ -234,14 +234,16 @@ const IndexPage = () => (
                 name="user_name"
                 id="name"
                 placeholder="Name"
+                required
               />
             </div>
             <div className="col-6 col-12-xsmall">
               <input
                 type="email"
-                name="user_email"
-                id="email"
+                name="reply_to"
+                id="reply_to"
                 placeholder="Email"
+                required
               />
             </div>
             <div className="col-12">
@@ -249,6 +251,7 @@ const IndexPage = () => (
                 name="message"
                 id="message"
                 placeholder="Message"
+                required
                 rows="4"
               />
             </div>
@@ -259,6 +262,7 @@ const IndexPage = () => (
                     type="submit"
                     value="Send Message"
                     className="primary"
+                    required
                   />
                 </li>
               </ul>
