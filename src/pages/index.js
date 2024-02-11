@@ -121,7 +121,7 @@ const IndexPage = () => (
             </a>
             <a href="https://radroutes.com">
               <li>
-                <h4 className="jerbz">Relay</h4>
+                <h4 className="jerbz">RAD Routes</h4>
                 <span className="icon fas fa-qrcode fa-3x" />
               </li>
             </a>
