@@ -221,7 +221,7 @@ const IndexPage = () => (
       <div className="container">
         <header className="major">
           <h2 id="titles">
-            <a href="mailto:ian@radlabz.com?subject=Greetings%20RADlabz!%20XXX%20here&body=Dear%20RADlabz,%0A%0Akeep%20rockin'.%0A%0AThe%20best,%0AXXX">
+            <a href="mailto:ian@radlabz.com?subject=Greetings%20Ian!%20XXX%20here&body=Hi%20Ian,%0A%0AWe%20would%20like%20to%20have%20a%20meeting.%0A%0AThe%20best,%0AXXX">
               Send a message
             </a>
           </h2>
