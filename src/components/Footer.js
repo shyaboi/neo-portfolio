@@ -36,7 +36,7 @@ export default function Footer() {
       </a>
       </li> */}
         <li>
-        <a href="mailto:ian@radlabz.com">
+        <a href="mailto:ian@radlabz.com?subject=Greetings%20Ian!%20XXX%20here&body=Hi%20Ian,%0A%0AWe%20would%20like%20to%20have%20a%20meeting.%0A%0AThe%20best,%0AXXX">
       <FaMailBulk />
       <span className="label">Email</span>
       </a>
