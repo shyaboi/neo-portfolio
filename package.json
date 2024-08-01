@@ -1,6 +1,6 @@
 {
   "name": "ian-sears-portfolio",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Ian Sears Porfolio",
   "repository": {
     "type": "git",
@@ -8,7 +8,7 @@
   },
   "author": {
     "name": "Ian Sears",
-    "email": "ian.shane.sears@gmail.com"
+    "email": "ian@radlabz.com"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
@@ -34,7 +34,7 @@
     "three": "^0.161.0"
   },
   "scripts": {
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "build": "npm run clean && gatsby build",
     "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
     "serve": "gatsby serve",

@@ -36,7 +36,8 @@ const sections = [
   { id: 'one', bg: require('../assets/images/pic1.webp') },
   { id: 'two', bg: require('../assets/images/pic2.webp') },
   { id: 'three', bg: require('../assets/images/pic3.webp') },
-  { id: 'four', bg: require('../assets/images/pic4.webp') },
+  { id: 'four', bg: require('../assets/images/pic33.webp') },
+  { id: 'five', bg: require('../assets/images/pic4.webp') },
 ];
 
 async function getVisitorDetails() {
@@ -125,9 +126,15 @@ const IndexPage = () => (
           </span>
           <div className="content">
             <header className="major">
-              <h2 id="titles">Contributions</h2>
+              <h2 id="titles">Career History</h2>
             </header>
             <ul className="icons-grid1">
+              <a href="https://radlabz.com">
+                <li>
+                  <h4 className="jerbz">RAD Labz</h4>
+                  <span className="icon fas fa-flask fa-3x" />
+                </li>
+              </a>
               <a href="https://dscout.com">
                 <li>
                   <h4 className="jerbz">dscout</h4>
@@ -144,7 +151,7 @@ const IndexPage = () => (
               <a href="https://techbootcamps.utexas.edu/coding/">
                 <li>
                   <h4 className="jerbz">UT Austin / edX</h4>
-                  <span className="icon fas  fa-book fa-3x" />
+                  <span className="icon fas fa-book fa-3x" />
                 </li>
               </a>
               <a href="https://ytel.com">
@@ -153,16 +160,10 @@ const IndexPage = () => (
                   <span className="icon fas fa-mobile fa-3x" />
                 </li>
               </a>
-              <a href="https://radlabz.com">
+              <a href="https://www.microcenter.com/site/content/about_microcenter.aspx">
                 <li>
-                  <h4 className="jerbz">RAD Labz</h4>
-                  <span className="icon fas fa-flask fa-3x" />
-                </li>
-              </a>
-              <a href="https://radroutes.com">
-                <li>
-                  <h4 className="jerbz">RAD Routes</h4>
-                  <span className="icon fas fa-qrcode fa-3x" />
+                  <h4 className="jerbz">Micro Center</h4>
+                  <span className="icon fas fa-laptop fa-3x" />
                 </li>
               </a>
             </ul>
@@ -176,6 +177,44 @@ const IndexPage = () => (
       </section>
 
       <section id="three" className="main special">
+        <div className="container">
+          <span className="image fit primary">
+            <img src={sections[1].bg} alt="" />
+          </span>
+          <div className="content">
+            <header className="major">
+              <h2 id="titles">Current Projects</h2>
+            </header>
+            <ul className="icons-grid1">
+              <a href="https://github.com/Open-Flags-API">
+                <li>
+                  <h4 className="jerbz">Open Flags</h4>
+                  <span className="icon fas fa-flag fa-3x" />
+                </li>
+              </a>
+              <a href="https://radroutes.com">
+                <li>
+                  <h4 className="jerbz">RAD Routes</h4>
+                  <span className="icon fas fa-qrcode fa-3x" />
+                </li>
+              </a>
+              {/* <a href="https://radlabz.com">
+                <li>
+                  <h4 className="jerbz">RAD Labz</h4>
+                  <span className="icon fas fa-flask fa-3x" />
+                </li>
+              </a> */}
+            </ul>
+          </div>
+          <Scroll type="id" element="four">
+            <a href="#four" className="goto-next ">
+              Next
+            </a>
+          </Scroll>
+        </div>
+      </section>
+
+      <section id="four" className="main special">
         <div className="container">
           <span className="image fit primary">
             <img src={sections[2].bg} alt="" />
@@ -204,15 +243,15 @@ const IndexPage = () => (
               countries and cultures, enriching my creativity and perspective.
             </p>
           </div>
-          <Scroll type="id" element="four">
-            <a href="#four" className="goto-next ">
+          <Scroll type="id" element="five">
+            <a href="#five" className="goto-next ">
               Next
             </a>
           </Scroll>
         </div>
       </section>
 
-      <section id="four" className="main special">
+      <section id="five" className="main special">
         <div className="container">
           <span className="image fit primary">
             <img src={sections[3].bg} alt="" />
