@@ -186,9 +186,21 @@ const IndexPage = () => (
               <h2 id="titles">Current Projects</h2>
             </header>
             <ul className="icons-grid1">
-              <a href="https://github.com/Open-Flags-API">
+              <a href="https://docs.openflags.net/implementations/api/curl/">
                 <li>
-                  <h4 className="jerbz">Open Flags</h4>
+                  <h4 className="jerbz">Open Flags API</h4>
+                  <span className="icon fas fa-flag fa-3x" />
+                </li>
+              </a>
+              <a href="https://www.npmjs.com/package/open-flags">
+                <li>
+                  <h4 className="jerbz">Open Flags npm package</h4>
+                  <span className="icon fas fa-flag fa-3x" />
+                </li>
+              </a>
+              <a href="https://pypi.org/project/open-flags/">
+                <li>
+                  <h4 className="jerbz">Open Flags PyPi Package</h4>
                   <span className="icon fas fa-flag fa-3x" />
                 </li>
               </a>
@@ -262,18 +274,22 @@ const IndexPage = () => (
             </header>
             <p>I love creating art, music, code and traveling the world.</p>
             <ul className="icons-grid">
-              <li>
-                <span className="icon major fa fa-code" />
-                <h3>Programming</h3>
-              </li>
+              <a href="https://github.com/shyaboi">
+                <li>
+                  <span className="icon major fa fa-code" />
+                  <h3>Programming</h3>
+                </li>
+              </a>
               <li>
                 <span className="icon major fa fa-music" />
                 <h3>Music</h3>
               </li>
-              <li>
-                <span className="icon major fa fa-paint-brush" />
-                <h3>Art</h3>
-              </li>
+              <a href="https://radlabz.com/gallery/">
+                <li>
+                  <span className="icon major fa fa-paint-brush" />
+                  <h3>Art</h3>
+                </li>
+              </a>
               <li>
                 <span className="icon major fa fa-gamepad" />
                 <h3>Gaming</h3>
