@@ -17,7 +17,7 @@
     "@react-three/drei": "^9.97.0",
     "@react-three/fiber": "^8.15.16",
     "emailjs-com": "^3.0.0",
-    "gatsby": "^3.0.0",
+    "gatsby": "^5.14.1",
     "gatsby-plugin-manifest": "^3.0.0",
     "gatsby-plugin-offline": "^4.0.0",
     "gatsby-plugin-react-helmet": "^4.0.0",
