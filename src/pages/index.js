@@ -129,6 +129,12 @@ const IndexPage = () => (
               <h2 id="titles">Career History</h2>
             </header>
             <ul className="icons-grid1">
+            <a href="https://www.gianteagle.com">
+                <li>
+                  <h4 className="jerbz">Giant Eagle</h4>
+                  <span className="icon fas fa-shopping-cart fa-3x" />
+                </li>
+              </a>
               <a href="https://radlabz.com">
                 <li>
                   <h4 className="jerbz">RAD Labz</h4>
@@ -158,12 +164,6 @@ const IndexPage = () => (
                 <li>
                   <h4 className="jerbz">Ytel</h4>
                   <span className="icon fas fa-mobile fa-3x" />
-                </li>
-              </a>
-              <a href="https://www.microcenter.com/site/content/about_microcenter.aspx">
-                <li>
-                  <h4 className="jerbz">Micro Center</h4>
-                  <span className="icon fas fa-laptop fa-3x" />
                 </li>
               </a>
             </ul>
