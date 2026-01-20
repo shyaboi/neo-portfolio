@@ -9,6 +9,31 @@ import overLayPic from '../assets/images/overlay.png';
 import { Link } from 'gatsby';
 import emailjs from 'emailjs-com';
 
+function showToast(message) {
+  const toast = document.createElement('div');
+  toast.textContent = message;
+  Object.assign(toast.style, {
+    position: 'fixed',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    background: '#77E6B1',
+    color: '#000',
+    padding: '12px 24px',
+    borderRadius: '8px',
+    fontSize: '14px',
+    zIndex: '9999',
+    opacity: '0',
+    transition: 'opacity 0.3s ease',
+  });
+  document.body.appendChild(toast);
+  requestAnimationFrame(() => (toast.style.opacity = '1'));
+  setTimeout(() => {
+    toast.style.opacity = '0';
+    setTimeout(() => toast.remove(), 300);
+  }, 3000);
+}
+
 function sendEmail(e) {
   e.preventDefault();
 
@@ -28,7 +53,7 @@ function sendEmail(e) {
       }
     );
     e.target.reset();
-  // alert('Your message has been sent, We will be in touch shortly!');
+  showToast('Your message has been sent. We will be in touch shortly!');
 }
 
 const sections = [
