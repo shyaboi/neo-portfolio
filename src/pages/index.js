@@ -14,10 +14,10 @@ function sendEmail(e) {
 
   emailjs
     .sendForm(
-      'service_yvxlc3j',
-      'template_u356tto',
+      'service_gxhh0kf',
+      'template_7lrhjzm',
       e.target,
-      'qRv4Jxcu2Ps5BBzUB'
+      'Xgox1MYiMV8QapDcT'
     )
     .then(
       (result) => {
@@ -27,17 +27,17 @@ function sendEmail(e) {
         console.log(error.text);
       }
     );
-  window.location.reload(false);
-  alert('Your message has been sent, We will be in touch shortly!');
+    e.target.reset();
+  // alert('Your message has been sent, We will be in touch shortly!');
 }
 
 const sections = [
   { id: 'zero', bg: require('../assets/images/bg.webp') },
   { id: 'one', bg: require('../assets/images/pic1.webp') },
   { id: 'two', bg: require('../assets/images/pic2.webp') },
-  { id: 'three', bg: require('../assets/images/pic3.webp') },
-  { id: 'four', bg: require('../assets/images/pic33.webp') },
-  { id: 'five', bg: require('../assets/images/pic4.webp') },
+  { id: 'three', bg: require('../assets/images/pic33.webp') },
+  { id: 'four', bg: require('../assets/images/pic4.webp') },
+  // { id: 'five', bg: require('../assets/images/pic4.webp') },
 ];
 
 async function getVisitorDetails() {
@@ -91,23 +91,21 @@ const IndexPage = () => (
               <h2 id="titles">Greetings</h2>
             </header>
             <p>
-              As a passionate software engineer, I bring a unique blend of
-              creativity, pragmatism, and time efficiency to my work. My
-              experience spans various roles where I've embraced leadership,
-              innovation, and technical excellence. I have a proven track record
-              in agile methodologies, mentoring teams to foster growth and
-              collaboration.
+              I build and ship software that’s clean, reliable, and fast to
+              iterate on. I’m a senior full-stack engineer with deep strength in
+              front-end development (React/JavaScrript/TypeScript) and solid
+              backend experience (Node/PythonRuby/Elixir), and I enjoy
+              partnering with product and design to turn messy problems into
+              simple, durable solutions.
             </p>
 
             <p>
               {' '}
-              My expertise extends across cloud infrastructure, programming
-              languages, and project management, allowing me to deliver
-              powerful, unique software solutions. Specializing in
-              componentization, microservices, APIs, and the front end, I am
-              adept at transforming innovative concepts into successful
-              executions, underscoring my diverse background and ability to
-              navigate complex challenges.
+              I’ve led projects end-to-end in high-traffic environments,
+              improved performance and UX, and raised engineering quality
+              through better architecture, testing, and code review practices.
+              I’m pragmatic, outcome-driven, and I like building systems—and
+              teams—that scale.
               {/* <br></br>deutsche, 日本語、中文 */}
             </p>
           </div>
@@ -129,16 +127,10 @@ const IndexPage = () => (
               <h2 id="titles">Career History</h2>
             </header>
             <ul className="icons-grid1">
-            <a href="https://www.gianteagle.com">
+              <a href="https://www.gianteagle.com">
                 <li>
                   <h4 className="jerbz">Giant Eagle</h4>
                   <span className="icon fas fa-shopping-cart fa-3x" />
-                </li>
-              </a>
-              <a href="https://radlabz.com">
-                <li>
-                  <h4 className="jerbz">RAD Labz</h4>
-                  <span className="icon fas fa-flask fa-3x" />
                 </li>
               </a>
               <a href="https://dscout.com">
@@ -154,10 +146,16 @@ const IndexPage = () => (
                   <i className=""></i>
                 </li>
               </a>
-              <a href="https://techbootcamps.utexas.edu/coding/">
+              <a href="https://2u.com/about/boot-camps/">
                 <li>
                   <h4 className="jerbz">UT Austin / edX</h4>
                   <span className="icon fas fa-book fa-3x" />
+                </li>
+              </a>
+              <a href="https://radlabz.com">
+                <li>
+                  <h4 className="jerbz">RAD Labz</h4>
+                  <span className="icon fas fa-flask fa-3x" />
                 </li>
               </a>
               <a href="https://ytel.com">
@@ -176,7 +174,7 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <section id="three" className="main special">
+      {/* <section id="three" className="main special">
         <div className="container">
           <span className="image fit primary">
             <img src={sections[1].bg} alt="" />
@@ -215,8 +213,41 @@ const IndexPage = () => (
                   <h4 className="jerbz">RAD Labz</h4>
                   <span className="icon fas fa-flask fa-3x" />
                 </li>
-              </a> */}
+              </a> 
             </ul>
+          </div>
+          <Scroll type="id" element="four">
+            <a href="#four" className="goto-next ">
+              Next
+            </a>
+          </Scroll>
+        </div>
+      </section> */}
+
+      <section id="three" className="main special">
+        <div className="container">
+          <span className="image fit primary">
+            <img src={sections[2].bg} alt="" />
+          </span>
+          <div className="content">
+            <header className="major">
+              <h2 id="titles">Free Time</h2>
+            </header>
+            <p>
+              Outside of my day-to-day engineering work, I stay hands-on by
+              building side projects—apps, websites, and small services—both
+              independently and with collaborators. I also enjoy embedded and
+              hardware-focused work, prototyping with microcontrollers and
+              sensors to explore how software interacts with the physical world.
+            </p>
+
+            <p>
+              {' '}
+              Creatively, I work in music and digital art (photography, digital
+              painting, and animation). Travel is another constant source of
+              perspective and inspiration, and it consistently informs how I
+              think about users, culture, and design.
+            </p>
           </div>
           <Scroll type="id" element="four">
             <a href="#four" className="goto-next ">
@@ -229,43 +260,6 @@ const IndexPage = () => (
       <section id="four" className="main special">
         <div className="container">
           <span className="image fit primary">
-            <img src={sections[2].bg} alt="" />
-          </span>
-          <div className="content">
-            <header className="major">
-              <h2 id="titles">Free Time</h2>
-            </header>
-            <p>
-              Outside the world of professional software engineering, I immerse
-              myself in a realm of creativity and exploration. I dedicate my
-              free time to crafting a diverse array of applications, websites,
-              and servers, both independently and in collaboration with others.
-              Venturing into the fascinating world of embeded engineering, and
-              electrical engineering. I experiment with sensors attached to
-              micro-controllers, or small computers to bring imaginative
-              projects to life.
-            </p>
-
-            <p>
-              {' '}
-              My artistic side flourishes through music and digital art
-              creation, where I blend photography with digital painting and
-              animation, crafting unique visual and auditory experiences.
-              Additionally, my passion for travel fuels my desire to explore new
-              countries and cultures, enriching my creativity and perspective.
-            </p>
-          </div>
-          <Scroll type="id" element="five">
-            <a href="#five" className="goto-next ">
-              Next
-            </a>
-          </Scroll>
-        </div>
-      </section>
-
-      <section id="five" className="main special">
-        <div className="container">
-          <span className="image fit primary">
             <img src={sections[3].bg} alt="" />
           </span>
           <div className="content">
@@ -274,22 +268,24 @@ const IndexPage = () => (
             </header>
             <p>I love creating art, music, code and traveling the world.</p>
             <ul className="icons-grid">
-              <a href="https://github.com/shyaboi">
-                <li>
-                  <span className="icon major fa fa-code" />
-                  <h3>Programming</h3>
-                </li>
-              </a>
+              {/* <a href="https://github.com/shyaboi"> */}
+              <li>
+                <span className="icon major fa fa-code" />
+                <h3>Programming</h3>
+              </li>
+              {/* </a> */}
+              {/* <a href="https://www.youtube.com/watch?v=mSbBmMYTUew"> */}
               <li>
                 <span className="icon major fa fa-music" />
                 <h3>Music</h3>
               </li>
-              <a href="https://radlabz.com/gallery/">
-                <li>
-                  <span className="icon major fa fa-paint-brush" />
-                  <h3>Art</h3>
-                </li>
-              </a>
+              {/* </a> */}
+              {/* <a href="https://radlabz.com/gallery/"> */}
+              <li>
+                <span className="icon major fa fa-paint-brush" />
+                <h3>Art</h3>
+              </li>
+              {/* </a> */}
               <li>
                 <span className="icon major fa fa-gamepad" />
                 <h3>Gaming</h3>
