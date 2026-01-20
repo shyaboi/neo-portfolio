@@ -65,43 +65,43 @@ const sections = [
   // { id: 'five', bg: require('../assets/images/pic4.webp') },
 ];
 
-async function getVisitorDetails() {
-  const details = {
-    userAgent: navigator.userAgent,
-    language: navigator.language,
-    platform: navigator.platform,
-    cookiesEnabled: navigator.cookieEnabled,
-    screenResolution: window.screen.width + 'x' + window.screen.height,
-    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-  };
+// async function getVisitorDetails() {
+//   const details = {
+//     userAgent: navigator.userAgent,
+//     language: navigator.language,
+//     platform: navigator.platform,
+//     cookiesEnabled: navigator.cookieEnabled,
+//     screenResolution: window.screen.width + 'x' + window.screen.height,
+//     timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+//   };
 
-  try {
-    const response = await fetch('https://ipinfo.io/json?token=adec09113aaaa7');
-    const data = await response.json();
+//   try {
+//     const response = await fetch('https://ipinfo.io/json?token=adec09113aaaa7');
+//     const data = await response.json();
 
-    details.ip = data.ip;
-    details.city = data.city;
-    details.region = data.region;
-    details.country = data.country;
-    details.loc = data.loc; // Latitude and Longitude
-    details.org = data.org; // ISP
+//     details.ip = data.ip;
+//     details.city = data.city;
+//     details.region = data.region;
+//     details.country = data.country;
+//     details.loc = data.loc; // Latitude and Longitude
+//     details.org = data.org; // ISP
 
-    console.log('Visitor details:', details);
-    // await fetch('/log-visitor', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(details),
-    // });
-  } catch (error) {
-    console.error('Error fetching visitor details:', error);
-  }
-}
+//     console.log('Visitor details:', details);
+//     // await fetch('/log-visitor', {
+//     //   method: 'POST',
+//     //   headers: {
+//     //     'Content-Type': 'application/json',
+//     //   },
+//     //   body: JSON.stringify(details),
+//     // });
+//   } catch (error) {
+//     console.error('Error fetching visitor details:', error);
+//   }
+// }
 
 const IndexPage = () => (
   useEffect(() => {
-    getVisitorDetails();
+    // getVisitorDetails();
   }, []),
   (
     <Layout>
@@ -109,7 +109,7 @@ const IndexPage = () => (
       <section id="one" className="main special">
         <div className="container">
           <span className="image fit primary">
-            <img src={sections[0].bg} alt="" />
+            <img src={sections[0].bg.default} alt="" />
           </span>
           <div className="content">
             <header className="major">
@@ -145,7 +145,7 @@ const IndexPage = () => (
       <section id="two" className="main special">
         <div className="container">
           <span className="image fit primary">
-            <img src={sections[1].bg} alt="" />
+            <img src={sections[1].bg.default} alt="" />
           </span>
           <div className="content">
             <header className="major">
@@ -252,7 +252,7 @@ const IndexPage = () => (
       <section id="three" className="main special">
         <div className="container">
           <span className="image fit primary">
-            <img src={sections[2].bg} alt="" />
+            <img src={sections[2].bg.default} alt="" />
           </span>
           <div className="content">
             <header className="major">
@@ -285,7 +285,7 @@ const IndexPage = () => (
       <section id="four" className="main special">
         <div className="container">
           <span className="image fit primary">
-            <img src={sections[3].bg} alt="" />
+            <img src={sections[3].bg.default} alt="" />
           </span>
           <div className="content">
             <header className="major">
@@ -396,7 +396,6 @@ const IndexPage = () => (
         componentTag={'div'}
       >
         {sections.map((s) => {
-          console.log(s.bg.default);
           return (
             <div
               key={s.id}
