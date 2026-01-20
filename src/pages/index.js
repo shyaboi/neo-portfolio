@@ -129,8 +129,6 @@ const IndexPage = () => (
               I’ve led projects end-to-end in high-traffic environments,
               improved performance and UX, and raised engineering quality
               through better architecture, testing, and code review practices.
-              I’m pragmatic, outcome-driven, and I like building systems—and
-              teams—that scale.
               {/* <br></br>deutsche, 日本語、中文 */}
             </p>
           </div>
