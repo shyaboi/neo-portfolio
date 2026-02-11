@@ -8,6 +8,14 @@ export default function Header() {
     <section id="zero">
       <header className="major">
         <h1 className="Header-Titles Btn-Shine">{config.heading}</h1>
+        <a
+          href="https://client-llm-chat.pages.dev/chat"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cyber-btn"
+        >
+          Chat with me
+        </a>
         <p>{config.subHeading}</p>
       </header>
       <div className="container">
@@ -15,7 +23,7 @@ export default function Header() {
           <li>
             <Scroll type="id" element="one">
               <a href="#one" className="button primary">
-                Welcome &#9660;
+                Take a look &#9660;
               </a>
             </Scroll>
           </li>
