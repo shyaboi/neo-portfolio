@@ -1474,19 +1474,13 @@ button,
   height: 100vh;
   position: relative;
   text-align: center;
-
-  &:after {
-    content: '';
-    display: inline-block;
-    height: 100vh;
-    vertical-align: middle;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   header {
     color: _palette(alt, fg);
-    display: inline-block;
     padding-bottom: (_size(element-height) + ($size-padding-lr * 2));
-    vertical-align: middle;
 
     h1,
     h2,
@@ -1521,7 +1515,7 @@ button,
     p {
       color: _palette(alt, fg-bold);
       font-weight: _font(weight-bold);
-      margin: (_size(element-margin) * 0.75) 0 0 0;
+      margin: 0;
     }
   }
 
@@ -1651,7 +1645,6 @@ button,
 
   #zero {
     header {
-      padding-bottom: (_size(element-height) + ($size-padding-lr * 2));
       width: 80%;
     }
 
@@ -1698,8 +1691,7 @@ button,
       @include padding($size-padding-tb, $size-padding-lr);
 
       .image.primary:first-child {
-        margin: (($size-padding-tb - $size-padding-lr) * -1) 0
-          (_size(element-margin) * 1.25) 0;
+        display: none;
       }
     }
 
@@ -1711,21 +1703,17 @@ button,
   /* Header */
 
   #zero {
-    height: 80vh;
-
-    &:after {
-      height: 80vh;
-    }
 
     header {
       padding-bottom: 0;
+      width: 90%;
 
       h1 {
         font-size: 2em;
       }
 
       p {
-        margin-top: 1em;
+        margin-top: 0;
       }
     }
 
